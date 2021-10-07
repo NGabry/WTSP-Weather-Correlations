@@ -1,8 +1,8 @@
-#Performing correlations for WTSP hatch date and weather variables
+# Performing correlations for WTSP hatch date and weather variables
 
 ############################################
 
-##SPEARMAN_TREND.py - ONLY USED FOR WEATHER TRENDS
+## SPEARMAN_TREND.py - ONLY USED FOR WEATHER TRENDS
 	
 Always type 'python spearman_trend.py' first
 
@@ -18,7 +18,7 @@ EXAMPLE: To run correlation on TAVG in January, type 'python spearman_trend.py T
 
 ############################################
 
-##CORRELATE.py and PREVIOUS_CORRELATE.py - USED FOR REGRESSING JULIAN DATE VARIABLES ON WEATHER
+## CORRELATE.py and PREVIOUS_CORRELATE.py - USED FOR REGRESSING JULIAN DATE VARIABLES ON WEATHER
 
 For correlate.py, previous_correlate.py
 
@@ -36,7 +36,7 @@ EXAMPLE: To run correlation on JULIAN with TAVG in January, type 'python correla
 
 ############################################
 
-WEATHER VARIABLES
+## WEATHER VARIABLES
 
 TAVG = Mean Monthly Temperature °C
 
