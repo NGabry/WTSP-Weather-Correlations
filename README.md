@@ -68,11 +68,14 @@ plt.xlabel('Julian Date', fontsize = 16,  color='navy')
 plt.tight_layout()
 plt.show()
 ```
+```{python}
+print("TESTING!!!")
+```
 
 or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
 
 ```{python} previous_correlate.py 1 JULIAN TAVG```
-```
+
 
 ## WEATHER VARIABLES
 
