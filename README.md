@@ -36,12 +36,8 @@ Always type 'python *SCRIPT_NAME*.py' first
 	argument 3 = one of the below weather variables 
 
 EXAMPLE: To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' 
-```{r setup, include=FALSE}  
-library(knitr)  
-library(reticulate)  
-knitr::knit_engines$set(python = reticulate::eng_python)  
-```
-```{python}
+
+```{r, engine='python'}
 import sys
 import scipy.stats as scipy
 import matplotlib.pyplot as plt
@@ -70,9 +66,11 @@ plt.ylabel(sys.argv[3], fontsize = 16, color='navy')
 plt.xticks(fontsize = 14, rotation=45, horizontalalignment='right')
 plt.xlabel('Julian Date', fontsize = 16,  color='navy')
 plt.tight_layout()
-plt.show()
+#plt.show()
+fig.savefig('test.png')
 ```
-
+output image:
+![output](test.png)
 
 or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
 
