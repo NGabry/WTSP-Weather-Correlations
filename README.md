@@ -17,8 +17,6 @@ For specific monthly trends from 1900 to 2020, enter 2 arguments
 
 EXAMPLE: To run correlation on TAVG in January, type 'python spearman_trend.py TAVG 1'
 
-```{python} spearman_trend.py TAVG 1```
-
 ## Correlations with Hatch Date 
 
 CORRELATE.py and PREVIOUS_CORRELATE.py - USED FOR REGRESSING JULIAN DATE VARIABLES ON WEATHER
@@ -37,42 +35,7 @@ Always type 'python *SCRIPT_NAME*.py' first
 
 EXAMPLE: To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' 
 
-```{r, engine='python'}
-import sys
-import scipy.stats as scipy
-import matplotlib.pyplot as plt
-import numpy as np 
-import pandas as pd
-
-years = range(2000,2020,1)
-
-weather = pd.read_csv('2000_2019_clean.csv')
-julian = pd.read_csv('Julian_means.csv')
-
-month = weather.drop(weather[weather['MONTH'] != 1].index)
-month = month.drop(month[month[TAVG] == 'FALSE'].index)
-month = month[month[TAVG].notna()]
-y = month[TAVG].astype(float)
-x = julian[JULIAN].astype(float)
-xy = scipy.linregress(x,y)
-print(JULIAN,'/',TAVG, ':', 1, 'r=', xy.rvalue, 'p=',xy.pvalue)
-
-plt.style.use('ggplot')
-plt.plot(x, y, 'o', color='navy')
-plt.plot(x, xy.intercept + xy.slope*x, 'r')
-plt.ylabel(sys.argv[3], fontsize = 16, color='navy')
-plt.xticks(fontsize = 14, rotation=45, horizontalalignment='right')
-plt.xlabel('Julian Date', fontsize = 16,  color='navy')
-plt.tight_layout()
-plt.savefig('test.png', bbox_inches='tight')
-```
-output image:
-![output](test.png)
-
 or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
-
-```{python} previous_correlate.py 1 JULIAN TAVG```
-
 
 ## WEATHER VARIABLES
 
