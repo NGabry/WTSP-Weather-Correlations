@@ -15,7 +15,11 @@ For specific monthly trends from 1900 to 2020, enter 2 arguments
 	
 	2. argument 2 = any month's Digit (i.e. If Jan enter 1, Feb enter 2, etc.)
 
-EXAMPLE: To run correlation on TAVG in January, type 'python spearman_trend.py TAVG 1'
+EXAMPLE: 
+
+To run correlation on TAVG in January, type 'python spearman_trend.py TAVG 1'
+
+![Image](docs/Figure_1.png)
 
 ## Correlations with Hatch Date 
 
@@ -34,11 +38,14 @@ Always type 'python *SCRIPT_NAME*.py' first
 	3. argument 3 = one of the below weather variables 
 
 EXAMPLES:
+
 To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' 
 
-![Image](docs/Figure_1.png)
+![Image](docs/Figure_2.png)
 
 or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
+
+![Image](docs/Figure_3.png)
 
 ## WEATHER VARIABLES
 
