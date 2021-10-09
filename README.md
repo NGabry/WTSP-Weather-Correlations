@@ -11,9 +11,9 @@ For overall trends from 1900 to 2020, enter 1 argument
 
 For specific monthly trends from 1900 to 2020, enter 2 arguments
 
-	argument 1 = one of the below weather variables,
+	1. argument 1 = one of the below weather variables,
 	
-	argument 2 = any month's Digit (i.e. If Jan enter 1, Feb enter 2, etc.)
+	2. argument 2 = any month's Digit (i.e. If Jan enter 1, Feb enter 2, etc.)
 
 EXAMPLE: To run correlation on TAVG in January, type 'python spearman_trend.py TAVG 1'
 
@@ -27,13 +27,16 @@ Always type 'python *SCRIPT_NAME*.py' first
 
 3 arguments are required
 
-	argument 1 = any month's Digit (i.e. If Jan enter 1, Feb enter 2, etc.)
+	1. argument 1 = any month's Digit (i.e. If Jan enter 1, Feb enter 2, etc.)
 	
-	argument 2 = JULIAN or EARLIEST, WxT_AVG, TxW_AVG, WxT_EARLIEST, TxW_EARLIEST
+	2. argument 2 = JULIAN or EARLIEST, WxT_AVG, TxW_AVG, WxT_EARLIEST, TxW_EARLIEST
 
-	argument 3 = one of the below weather variables 
+	3. argument 3 = one of the below weather variables 
 
-EXAMPLE: To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' 
+EXAMPLES:
+To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' 
+
+![Image](docs/Figure_1.png)
 
 or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
 
