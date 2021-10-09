@@ -38,7 +38,7 @@ Always type 'python *SCRIPT_NAME*.py' first
 EXAMPLE: To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
 
 ```shell
-python3 correlate.py 1 JULIAN TAVG
+python correlate.py 1 JULIAN TAVG
 ```
 
 ```{python} previous_correlate.py 1 JULIAN TAVG```
