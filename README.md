@@ -67,7 +67,7 @@ plt.xticks(fontsize = 14, rotation=45, horizontalalignment='right')
 plt.xlabel('Julian Date', fontsize = 16,  color='navy')
 plt.tight_layout()
 #plt.show()
-fig.savefig('test.png')
+plt.savefig('test.png')
 ```
 output image:
 ![output](test.png)
