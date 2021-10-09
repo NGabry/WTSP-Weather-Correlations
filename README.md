@@ -17,7 +17,7 @@ For specific monthly trends from 1900 to 2020, enter 2 arguments
 
 EXAMPLE: To run correlation on TAVG in January, type 'python spearman_trend.py TAVG 1'
 
-'''{python} spearman_trend.py TAVG 1'''
+```{python} spearman_trend.py TAVG 1```
 
 ## Correlations with Hatch Date 
 
@@ -37,9 +37,9 @@ Always type 'python *SCRIPT_NAME*.py' first
 
 EXAMPLE: To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 JULIAN TAVG' or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
 
-'''{python} correlate.py 1 JULIAN TAVG'''
+```{python} correlate.py 1 JULIAN TAVG```
 
-'''{python} previous_correlate.py 1 JULIAN TAVG'''
+```{python} previous_correlate.py 1 JULIAN TAVG```
 
 ## WEATHER VARIABLES
 
