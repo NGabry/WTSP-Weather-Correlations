@@ -1,4 +1,4 @@
-# Performing correlations using White-thraoted Sparrow hatch date data and weather variables 
+# Performing correlations using White-throated Sparrow hatch date data and weather variables 
 This project was constructed for the purpose of undergraduate mentorship in testing for correlations between weather variables and annual first hatch-date of a species of song bird (pearson's r), as all long-term weather trends around the sampling site (spearman's r). 
 
 To use, make sure that python scripts are placed within the same working directory as all of the spreadhseets. 
