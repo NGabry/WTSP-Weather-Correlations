@@ -1,9 +1,11 @@
 # Performing correlations using White-thraoted Sparrow hatch date data and weather variables 
 DESCRIPTION OF PROJECT
 
+Ultimately, running each script will produce a line plot (raw data plotted in blue, and linear regression line plotted in red), as well as a text output which states the selected variables, the r-value, and the p-value.
+
 ## Long-term Weather Trends 
 
-SPEARMAN_TREND.py - ONLY USED FOR WEATHER TRENDS
+_spearman_trend_.py - ONLY USED FOR WEATHER TRENDS
 	
 Always type 'python spearman_trend.py' first
 
@@ -21,9 +23,11 @@ To run correlation on TAVG in January, type 'python spearman_trend.py TAVG 1'
 
 ![Image](docs/Figure_1.png)
 
+### TAVG / 1  r = -0.11784688731182287  p = 0.21175650799088902
+
 ## Correlations with Hatch Date 
 
-CORRELATE.py and PREVIOUS_CORRELATE.py - USED FOR REGRESSING JULIAN DATE VARIABLES ON WEATHER
+_correlate.py_ and _precious_correlate.py_ - USED FOR REGRESSING JULIAN DATE VARIABLES ON WEATHER
 
 For correlate.py, previous_correlate.py
 
@@ -43,9 +47,13 @@ To run correlation on JULIAN with TAVG in January, type 'python correlate.py 1 J
 
 ![Image](docs/Figure_2.png)
 
+### TAVG / 1  r = -0.030349780703367392  p = 0.8989265488664331
+
 or 'python previous_correlate.py 1 JULIAN TAVG' for January of the previous year. 
 
 ![Image](docs/Figure_3.png)
+
+### TAVG / 1  r = -0.07869715383450833  p = 0.7415549772706159
 
 ## WEATHER VARIABLES
 
